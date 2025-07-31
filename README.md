@@ -8,7 +8,7 @@ Abaixo está o Modelo de Entidade-Relacionamento do banco de dados:
 
 ![Diagrama do Modelo de Entidade-Relacionamento](cb_images/mer.png)
 
-#Desafio 1:
+# Desafio 1:
 Fiquei com uma dúvida, pois no pdf vocês afirmam que : "Este exemplo corresponde a um determinado pedido (guestCheckId) com um único item  
 (guestCheckLineItemId), referente a um único item de menu (menuItem)". Isso sugere que a relação 1:N apenas poderá ocorrer apenas
 entre "DETAILLINES" e "MENUITEM". Para ajudar na tomada de decisão, eu assumia a lógica que a estrutura do ERP.json me forneceu. Bom ,
@@ -29,15 +29,15 @@ Após isso, as tabelas foram criadas. Não há muitos comandos complexos nessa p
 e será organizada as chaves primárias e estrangeiras em cada tabela de forma que respeite o tipo de relação entre elas. Utilizei o sqlite pela facilidade
 e não precisar de servidor. Foi criado uma linha para cada tabela.
 
-#Desafio 2:
+# Desafio 2:
 
-1. Por que armazenar as respostas das APIs?
+# 1. Por que armazenar as respostas das APIs?
 
 As respostas brutas da API representam a informação original e inalterada da fonte. Armazená-las garante que haja sempre uma cópia fiel dos dados. Pode servir
 como backup e tambem, caso haja mudança nos modelos de trabalho da empresa você pode fazer processamento de dados sem que haja a necessidade de chamar, novamente,
 a API de origem.
 
-2.Como você armazenaria os dados? Crie uma estrutura de pastas capaz de armazenar as respostas da API. 
+# 2.Como você armazenaria os dados? Crie uma estrutura de pastas capaz de armazenar as respostas da API. 
 Ela deve permitir manipulação, verificações, buscas e pesquisas rápidas.
 
 /data_lake/
@@ -79,7 +79,7 @@ Ela deve permitir manipulação, verificações, buscas e pesquisas rápidas.
 │       │   │   │   │   ├── ...
 
 
-3. Considere que a resposta do endpoint getGuestChecks foi alterada, por exemplo, guestChecks.taxes foi renomeado para guestChecks.taxation. O que isso implicaria?
+# 3. Considere que a resposta do endpoint getGuestChecks foi alterada, por exemplo, guestChecks.taxes foi renomeado para guestChecks.taxation. O que isso implicaria?
 
 Qualquer código ou ferramenta que parseia o JSON da resposta da API e espera o campo "taxes" falharia. Acredito que a solução para esse caso, seria uma espécie
 de mudança gradual. Com isso, criaria um novo endpoint "taxation", mas deixaria "taxes" funcionando, contudo com um comunicado para a empresa de que as novas
