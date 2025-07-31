@@ -5,7 +5,7 @@ Este repositório contém a solução para o desafio de engenharia de dados do C
 ## Modelo de Banco de Dados (MER)
 
 Acompanhe o progresso e as tarefas do projeto no quadro Kanban:
-[Acessar Quadro Kanban](https://github.com/joaocabeca2/projects/1) 
+[Acessar Quadro Kanban](https://github.com/users/joaocabeca2/projects/1/views/1) 
 
 Abaixo está o Modelo de Entidade-Relacionamento do banco de dados:
 
