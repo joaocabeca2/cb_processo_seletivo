@@ -6,4 +6,4 @@ Este repositório contém a solução para o desafio de engenharia de dados do C
 
 Abaixo está o Modelo de Entidade-Relacionamento do banco de dados:
 
-![Diagrama do Modelo de Entidade-Relacionamento](docs/images/mer.png)
+![Diagrama do Modelo de Entidade-Relacionamento](cb_images/mer.png)
