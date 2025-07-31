@@ -40,6 +40,7 @@ a API de origem.
 # 2.Como você armazenaria os dados? Crie uma estrutura de pastas capaz de armazenar as respostas da API. 
 Ela deve permitir manipulação, verificações, buscas e pesquisas rápidas.
 
+```text
 /data_lake/
 ├── raw/
 │   ├── bi_getFiscalInvoice/
@@ -77,6 +78,8 @@ Ela deve permitir manipulação, verificações, buscas e pesquisas rápidas.
 │       │   │   │   ├── store_id=XXXX/
 │       │   │   │   │   ├── {timestamp_uuid}.json
 │       │   │   │   │   ├── ...
+```
+
 
 
 # 3. Considere que a resposta do endpoint getGuestChecks foi alterada, por exemplo, guestChecks.taxes foi renomeado para guestChecks.taxation. O que isso implicaria?
